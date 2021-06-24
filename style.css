@@ -181,7 +181,7 @@ p{
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    margin: 30px auto;    
+    margin: 30px auto 0;    
 }
 .casting__box{
     width: 26%;
@@ -208,6 +208,61 @@ p{
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.4;
+}
+.price__content{
+    width: 90%;
+    margin: 0 auto;
+}
+.price__content--txt{
+    margin: 30px 0;
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+.price__content--image{
+    margin: 10px auto;
+    text-align: center;
+}
+.price__content--image > img{
+    width: 100%;
+}
+.sche__content--txt{
+    width: 90%;
+    margin: 20px auto;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.sche__box--main{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a6dde0;
+}
+.sche__box--txt{
+    width: 73%;
+    padding-right: 20px;
+}
+.sche__box--txt--title{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.sche__box--txt--txt{
+    font-size: 1.8rem;
+}
+.sche__box--image > img{
+    height: 100%;
+}
+.triangle{
+    margin-top: -2px;
+    text-align: center;
+}
+footer{
+    margin: 50px 0 30px;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     html{
@@ -302,5 +357,32 @@ p{
     }
     .casting__box--txt--txt{
         font-size: 2.8rem;
+    }
+    .price__content--txt{
+        margin: 10px 0;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    .sche__content--txt{
+        font-size: 3.4rem;
+        width: 100%;
+    }
+    .sche__box--image{
+        width: 100%;
+    }
+    .sche__box--image > img{
+        width: 100%;
+    }
+    .sche__box--txt{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 10px 10px;
+    }
+    .sche__box--txt--title{
+        font-size: 3.8rem;
+        font-weight: bold;
+    }
+    .sche__box--txt--txt{
+        font-size: 2.4rem;
     }
 }
