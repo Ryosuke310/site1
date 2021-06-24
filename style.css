@@ -8,6 +8,7 @@ body{
     padding: 0;
     font-size: calc(1.4rem + (1vw - 0.56rem) * -1.0000);/* 14px~10pxで可変*/
     line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
 }
 h1 {
     font-size: calc(2.4rem + (1vw - 0.56rem) * 3.0000);/* 24px~36pxで可変*/
