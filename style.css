@@ -4,9 +4,9 @@ html{
     padding: 0;
 }
 body{
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
     padding: 0;
-    font-size: calc(1.4rem + (1vw - 0.56rem) * -1.0000);/* 14px~10pxで可変*/
     line-height: 1.8;
     font-family: 'Roboto', sans-serif;
 }
@@ -57,6 +57,11 @@ p{
         font-size: 2.4rem;/* 24px*/
     }
 }
+@media (min-width: 1420px) {/* 1420px以上*/
+    body{
+        width: 1420px;
+    }
+}
 .header__content{
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +101,7 @@ p{
 }
 .header__tel > div > p{
     display: inline;
+    font-size: 1.4rem;
 }
 .keyv > img{
     width: 100%;
@@ -112,7 +118,7 @@ p{
     text-align: center;
 }
 .keyv__btnarea--btn > a{
-    font-size: 2.0rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -127,18 +133,24 @@ p{
     margin: 0 auto;
 }
 .content__title{
-    height: 100px;
-    background: url("./image/feature--bk.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 120px;
+    padding: 5px 0;
+    background: #00d2ff;
 }
-.content__title > p{
+.content__title--top{
+    display: inline;
+    padding-left: 5%;
+    font-size: 3.2rem;
+    color: #b3f2ff;    
+}
+.content__title--txt{
     font-size: 5.0rem;
+    text-align: center;
     color: #fff;
+    line-height: 0.2;
 }
 .feature__content{
-    padding: 20px 0;
+    padding: 20px 0 50px;
     background-color: #e4f6fa;
 }
 .feature__box{
@@ -172,7 +184,7 @@ p{
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    margin: 40px auto;
+    margin: 40px auto 0;
 }
 .performance__content > img{
     width: 13%;
@@ -188,7 +200,7 @@ p{
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    margin: 30px auto 0;    
+    margin: 50px auto 0;    
 }
 .casting__box{
     width: 26%;
@@ -207,7 +219,7 @@ p{
     color: #00d2ff;  
 }
 .casting__box--txt--txt{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .txt--attention{
     margin-top: 20px;
@@ -218,7 +230,7 @@ p{
 }
 .price__content{
     width: 90%;
-    margin: 0 auto 50px;
+    margin: 0 auto 80px;
 }
 .price__content--txt{
     margin: 30px 0;
@@ -226,15 +238,19 @@ p{
     font-weight: bold;
 }
 .price__content--image{
-    margin: 10px auto;
+    margin: 10px auto 20px;
     text-align: center;
 }
 .price__content--image > img{
     width: 100%;
 }
+.price__content--txt{
+    font-size: 3.6rem;
+    font-weight: bold;
+}
 .sche__content--txt{
     width: 90%;
-    margin: 20px auto;
+    margin: 40px auto;
     font-size: 2.8rem;
     font-weight: bold;
     text-align: center;
@@ -250,7 +266,7 @@ p{
     background-color: #a6dde0;
 }
 .sche__box--txt{
-    width: 73%;
+    width: 70%;
     padding-right: 20px;
 }
 .sche__box--txt--title{
@@ -260,8 +276,14 @@ p{
 .sche__box--txt--txt{
     font-size: 1.8rem;
 }
+.sche__box--image{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+}
 .sche__box--image > img{
-    height: 100%;
+    width: 100%;
 }
 .triangle{
     margin-top: -2px;
@@ -271,9 +293,38 @@ footer{
     margin: 50px 0 30px;
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+.content__performance > p{
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.per__btnarea{
+    margin-top: -5px;
+    padding: 0 0 70px 0;
+}
+.per__btnarea--btn{
+    width: 480px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #00d2ff;
+    text-align: center;
+}
+.per__btnarea--btn > a{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.price__attention{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
     html{
-        font-size: 26%;
+        font-size: 30%;
         margin: 0;
         padding: 0;
     }
@@ -282,6 +333,11 @@ footer{
     }
     .sp{
         display: block;
+    }
+    .content__title--txt {
+        font-size: 3.6rem;
+        color: #fff;
+        font-weight: bold;
     }
     .header__content{
         margin: 10px 2%;
@@ -323,12 +379,22 @@ footer{
         font-size: 3.0rem;
     }
     .content__title{
-        height: 30px;
-        background-size: contain;
-        background-position: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 50px;
+        padding: 2px 0 10px 0;
+    }
+    .casting__content {
+        margin: 25px auto 0;
+    }
+    .content__title--top{
+        font-size: 2.2rem;
+    }
+    .content__title--txt{
+        line-height: 1.0;
+        font-size: 4.4rem;
+    }
+    .special{
+        font-size: 3.2rem;
+        padding: 0 0 15px 0;
     }
     .content__trouble{
         width: 92%;
@@ -340,7 +406,28 @@ footer{
     }
     .feature__box{
         width: 95%;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
+    }
+    .feature__content{
+        padding-bottom: 20px;
+    }
+    .content__performance > p {
+        margin-bottom: 20px;
+    }
+    .per__btnarea{
+        padding: 0 0 30px 0;
+    }
+    .txt--attention {
+        margin-top: 12px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+    .per__btnarea--btn{
+        width: 80%;
+        padding: 10px 0; 
     }
     .feature__box--image{
         width: 95%;
@@ -368,8 +455,11 @@ footer{
         text-align: center;
     }
     .content__casting{
-        padding: 0 0 20px 0;
+        padding: 0;
         background-color: #e4f6fa;
+    }
+    .price__attention {
+        width: 80%;
     }
     .big--blue{
         font-size: 4.8rem;
@@ -379,14 +469,18 @@ footer{
     }
     .price__content--txt{
         margin: 10px 0;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         font-weight: bold;
+        text-align: center;
+    }
+    .sche__content--txt {
+        margin: 15px auto;
     }
     .price__content {
         margin: 0 auto 30px;
     }
     .sche__content--txt{
-        font-size: 3.4rem;
+        font-size: 3.0rem;
         width: 100%;
     }
     .sche__box--image{
