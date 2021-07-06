@@ -323,23 +323,23 @@ footer{
     line-height: 1.6;
 }
 #sf-form-page h2 {
-    margin: 20px 0 0 0;
-    background: #000000;
-    color: #fff;
-    width: 20%;
-    margin: 0 auto;
-    font-size: 3.0rem;
+    margin: 20px 0 0 0!important;
+    background: #000000!important;
+    color: #fff!important;
+    width: 20%!important;
+    margin: 0 auto!important;
+    font-size: 3.0rem!important;
 }
 .layout-nocover .divider {
-    border: none;
-    margin: 20px auto;
-    width: 100px;
+    border: none!important;
+    margin: 20px auto!important;
+    width: 100px!important;
 }
 .sf-footer .formrun-logo svg {
-    display: none;
+    display: none!important;
 }
 .sf-footer small, .sf-footer a {
-    display: none;
+    display: none!important;
 }
 @media screen and (max-width: 768px) {
     html{
