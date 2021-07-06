@@ -290,7 +290,7 @@ p{
     text-align: center;
 }
 footer{
-    margin: 50px 0 30px;
+    margin: 0 0 30px;
     text-align: center;
 }
 .content__performance > p{
@@ -329,6 +329,17 @@ footer{
     width: 20%;
     margin: 0 auto;
     font-size: 3.0rem;
+}
+.layout-nocover .divider {
+    border: none;
+    margin: 20px auto;
+    width: 100px;
+}
+.sf-footer .formrun-logo svg {
+    display: none;
+}
+.sf-footer small, .sf-footer a {
+    display: none;
 }
 @media screen and (max-width: 768px) {
     html{
