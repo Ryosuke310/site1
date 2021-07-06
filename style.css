@@ -322,6 +322,14 @@ footer{
     font-weight: bold;
     line-height: 1.6;
 }
+#sf-form-page h2 {
+    margin: 20px 0 0 0;
+    background: #000000;
+    color: #fff;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 3.0rem;
+}
 @media screen and (max-width: 768px) {
     html{
         font-size: 30%;
@@ -516,5 +524,8 @@ footer{
     }
     .sche__box--txt--title{
         margin-top: 10px;
+    }
+    #sf-form-page h2 {
+        width: 70%;
     }
 }
